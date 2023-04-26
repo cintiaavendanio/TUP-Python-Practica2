@@ -14,8 +14,13 @@ def numeros_al_final_basico(lista: List[Union[float, str]]) -> List[Union[float,
     numeros = []
     strings = []
     for elemento in lista:
-        #preguntar porque no funciona con float
-        if type(elemento) == str:
+        #para contemplar que entren numeros
+        # if type(elemento) == float or type(elemento) ==int:
+        #     numeros.append(elemento)
+        # else:
+        #     strings.append(elemento)
+
+        if type(elemento)==str:
             strings.append(elemento)
         else:
             numeros.append(elemento)

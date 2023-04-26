@@ -52,9 +52,7 @@ def es_vocal_if_in(letra: str) -> bool:
     if letra.lower() in vocales:
         return True
     return False
-
-
-
+#if in se usa para recorrer arreglos "va viendo si esa letra esta en la lista de vocales"
 
 # NO MODIFICAR - INICIO
 assert es_vocal_if_in("a")

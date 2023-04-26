@@ -43,6 +43,7 @@ Referencia: https://docs.python.org/3/library/functions.html#max"""
 
 
 def maximo_cuadruple(a: float, b: float, c: float, d: float) -> float:
+    
     return max(a, b, c, d)
 
 

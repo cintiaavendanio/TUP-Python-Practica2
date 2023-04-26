@@ -7,6 +7,8 @@
 def sumatoria_basico(n: int) -> int:
     suma = 0
     for i in range(1, n+1):
+        #desde el 1 hasta el segundo parametro sin incluir
+        #suma=suma+i
         suma += i
     return suma
 
@@ -57,6 +59,7 @@ def multiplicar_basico(numeros: Iterable[float]) -> float:
         return producto
     
     return 0
+#si una lista tiene datos es true sino es false
 
 
 # NO MODIFICAR - INICIO
