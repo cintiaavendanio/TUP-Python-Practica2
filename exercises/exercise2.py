@@ -11,9 +11,15 @@
     Referencia: https://docs.python.org/3/reference/expressions.html#comparisons # noqa: E501
     """
 
+
 def maximo_encadenado(a: float, b: float, c: float) -> float:
-    return max(a,b,c)
-    
+    maximo = a
+    if b > maximo:
+        maximo = b
+    if c>maximo:
+        maximo=c
+    return maximo
+
 
 # NO MODIFICAR - INICIO
 assert maximo_encadenado(1, 10, 5) == 10
@@ -35,9 +41,11 @@ assert maximo_encadenado(24, 18, 18) == 24
 
 Referencia: https://docs.python.org/3/library/functions.html#max"""
 
+
 def maximo_cuadruple(a: float, b: float, c: float, d: float) -> float:
-    return max(a,b,c,d)
-   
+    return max(a, b, c, d)
+
+
 # NO MODIFICAR - INICIO
 assert maximo_cuadruple(1, 10, 5, -5) == 10
 assert maximo_cuadruple(4, 9, 18, 6) == 18
@@ -50,6 +58,7 @@ assert maximo_cuadruple(24, 9, 18, 30) == 30
 """Re-escribir para que tome una cantidad arbitraria de parámetros.
     Referencia: https://docs.python.org/3/tutorial/controlflow.html#arbitrary-argument-lists # noqa: E501
     """
+
 
 def maximo_arbitrario(*args) -> float:
     return max(args)

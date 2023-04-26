@@ -50,12 +50,13 @@ from typing import Iterable  # noqa: E402
         - No utilizar ELSE
 """
 def multiplicar_basico(numeros: Iterable[float]) -> float:
-    # producto=1
-    # if numeros:
-    #     for i in numeros:
-    #        return producto*i
+    producto=1
+    if numeros:
+        for i in numeros:
+           producto=producto*i
+        return producto
     
-    # return 0
+    return 0
 
 
 # NO MODIFICAR - INICIO

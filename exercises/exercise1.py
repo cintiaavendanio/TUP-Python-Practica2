@@ -21,6 +21,7 @@ assert maximo_basico(9, 18) == 18
 """Re-escribir utilizando el built-in max.
     Referencia: https://docs.python.org/3/library/functions.html#max
     """
+
 def maximo_libreria(a: float, b: float) -> float:
     return max(a,b)
 
