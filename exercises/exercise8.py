@@ -144,7 +144,7 @@ def combinar_zip_args(*args) -> Tuple[Any]:
 respuesta = (
     ("ventana", 100.48, 6852, "hogar", True),
     ("lámpara", 16.42, 1459, "libreria", False),
-    ("shampoo", 5.2, 3578, "perfumeria", True),
+    ("shampoo", 5.2, 3578, "perfumeria", True,4),
 )
 
 componentes = [
