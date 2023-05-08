@@ -4,6 +4,13 @@ from typing import List, Union
 
 
 def maximo_recursivo(*args) -> float:
+    max = args[0]
+    for elemento in args:
+        if max < elemento:
+            max = elemento
+    return max
+    # return reduce(lambda x,y: x if x>y else y, args)
+
     """Toma una cantidad arbitraria de números y devuelve el mayor.
 
     Restricciónes:
@@ -29,6 +36,8 @@ from functools import reduce  # noqa: E402
 
 
 def sumatoria_reduce(n: int) -> int:
+    return reduce(lambda x,y: x+y, range(n+1))
+
     """Devuelve la suma de los números de 1 a N.
 
     Restricción: Utilizar la función reduce.
@@ -47,6 +56,7 @@ if __name__ == "__main__":
 
 
 def numeros_al_final_sorted(lista: List[Union[float, str]]) -> List[Union[float, str]]:  # noqa: E501
+    return sorted(lista, key=lambda item: type(item) is int)
     """Re-escribir utilizando la función sorted con una custom key.
 
     Restricciones:
